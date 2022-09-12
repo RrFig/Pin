@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>Pinball</title>
+        <title>Mum's Pinball</title>
         <script src="jsspeccy/jsspeccy.js"></script>
         <style>
             body {
@@ -14,7 +14,7 @@
             }
         </style>
     </head>
-    <body onload="emu = JSSpeccy(document.getElementById('jsspeccy'), {zoom: 2, sandbox: false})">
+    <body onload="emu = JSSpeccy(document.getElementById('jsspeccy'), {machine: 48,zoom: 2, sandbox: true,autoStart: true, autoLoadTapes: true })">
         <div id="jsspeccy"></div>
     </body>
 </html>
