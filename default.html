@@ -1,12 +1,20 @@
 <!doctype html>
 <html>
     <head>
-        <title>Pinball</title>
+        <title>Mum's Pinball</title>
         <script src="jsspeccy/jsspeccy.js"></script>
+        <style>
+            body {
+                background-color: #444;
+            }
+            #jsspeccy {
+                width: 640px;
+                margin: auto;
+                background-color: white;,
+            }
+        </style>
     </head>
-    <body onload="emu = JSSpeccy(document.getElementById('jsspeccy'), {zoom: 2, sandbox: true, tapeAutoLoadMode: 'usr0'})">
-        <h1>JSSpeccy 3</h1>
-        <h2>a ZX Spectrum emulator in the browser</h2>
+    <body onload="emu = JSSpeccy(document.getElementById('jsspeccy'), {machine: 48, sandbox: true, zoom: 2, tapeAutoLoadMode: 'default', autoStart: false, tapeTrapsEnabled: false, autoLoadTapes: true, openUrl: 'https://rrfig.github.io/Pin/Pin.tzx'})">
         <div id="jsspeccy"></div>
     </body>
 </html>
