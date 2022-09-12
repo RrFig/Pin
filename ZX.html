@@ -1,1 +1,20 @@
-
+<!doctype html>
+<html>
+    <head>
+        <title>ZX Spectrum</title>
+        <script src="jsspeccy/jsspeccy.js"></script>
+        <style>
+            body {
+                background-color: #444;
+            }
+            #jsspeccy {
+                width: 640px;
+                margin: auto;
+                background-color: white;,
+            }
+        </style>
+    </head>
+    <body onload="emu = JSSpeccy(document.getElementById('jsspeccy'), {machine: 48, sandbox: false, zoom: 2, tapeAutoLoadMode: 'default', autoStart: true, tapeTrapsEnabled: false, autoLoadTapes: true})">
+        <div id="jsspeccy"></div>
+    </body>
+</html>
