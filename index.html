@@ -14,7 +14,12 @@
             }
         </style>
     </head>
-    <body onload="emu = JSSpeccy(document.getElementById('jsspeccy'), {machine: 48,zoom: 2, sandbox: true,autoStart: true, autoLoadTapes: true })">
+    <body onload="emu = JSSpeccy(document.getElementById('jsspeccy'), {machine: 48,zoom: 4, sandbox: true,autoStart: true, autoLoadTapes: true })">
         <div id="jsspeccy"></div>
     </body>
+      <script>
+        let emu = JSSpeccy(document.getElementById('jsspeccy'));
+        emu.openFileDialog();
+    </script>
+    
 </html>
